@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Assignment: Minimal Library Management System
 
-## Getting Started
+- A Library Management Front-end with Next.js(react-framework),TypeScript, Redux Toolkit, API built with Express.js, TypeScript and MongoDB Atlas (via Mongoose).
 
-First, run the development server:
+* * *
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Public Access: All pages are publicly accessible without authentication.
+* UI: Responsive and Simple Ui.
+* Book Management: Comprehensive CRUD (Create, Read, Update, Delete) operations for books.
+* Borrowing System: Handle book borrowing with quantity tracking
+* Availability Control: Automatic availability updates based on stock
+* Filtering & Sorting: Advanced book filtering by genre with sorting options
+* Aggregation Pipeline: Borrowed books summary with MongoDB aggregation
+* Data Validation: Comprehensive schema validation with Mongoose
+* Middleware Implementation: Pre/post hooks for business logic
+* Error Handling: Proper error responses with detailed messages
+* TypeScript: Full type safety and modern JavaScript features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation & Setup Steps
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Step 1: Clone Project Directory.
+ 
+`git clone https://github.com/rrishiddh/Redux-A4.git`
 
-## Learn More
+- Step 2: Install Project Dependencies.
 
-To learn more about Next.js, take a look at the following resources:
+` npm i`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Step 4: Run the Application.
+`npm run dev`
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+###
+
+## Project's Page Structure
+
+* src/app/books~ Displays a list of all books with options to view, edit, delete and borrow
+* src/app/borrow/:bookId~ Form to borrow a selected book
+* src/app/borrow-summary~ Displays an aggregated summary of all borrowed books.
+* src/app/create-book~ Form interface to add a new book to the system.
+* src/app/edit-book/:id~ Interface to update an existing book’s details.
+
+
+###
+
+
+* Borrow a Book
+- For Borrow a Book ~ POST /api/borrow
+- Borrowed Books Summary ~ GET /api/borrow
+
+### Dependencies:
+- @reduxjs/toolkit: ^2.8.2
+- lucide-react: ^0.525.0
+- next: 15.3.5
+- react: ^19.0.0
+- react-dom: ^19.0.0
+- react-hot-toast: ^2.5.2
+- react-redux: ^9.2.0
+
+##  Link: 
+### Vercel : [https://library-management-rrishiddh.vercel.app/books/](https://library-management-rrishiddh.vercel.app/books)
+
+###  Github-Repo-Frontend : [https://github.com/rrishiddh/Redux-A4](https://github.com/rrishiddh/Redux-A4)
+###  Github-Repo-Backend : [https://github.com/rrishiddh/Express-Mongoose-A3](https://github.com/rrishiddh/Express-Mongoose-A3)
+
+
