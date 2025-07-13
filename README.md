@@ -29,7 +29,8 @@
 ` npm i`
 
 
-- Step 4: Run the Application.
+- Step 3: Run the Application.
+
 `npm run dev`
 
 
@@ -45,17 +46,10 @@
 * src/app/edit-book/:id~ Interface to update an existing book’s details.
 
 
-###
-
-
-* Borrow a Book
-- For Borrow a Book ~ POST /api/borrow
-- Borrowed Books Summary ~ GET /api/borrow
-
 ### Dependencies:
 - @reduxjs/toolkit: ^2.8.2
 - lucide-react: ^0.525.0
-- next: 15.3.5
+- next: ^15.3.5
 - react: ^19.0.0
 - react-dom: ^19.0.0
 - react-hot-toast: ^2.5.2
